@@ -31,7 +31,7 @@ $(".search").on("click", function() {
         $(".current-condition").show();
         $(".forecast-title").show();
         var iconcode = response.weather[0].icon;
-        var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+        var iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
         $(".icon").attr('src', iconurl)
         lat = response.coord.lat;
         lon = response.coord.lon;
@@ -40,8 +40,7 @@ $(".search").on("click", function() {
         $(".current-temp").text("Temperature: " + currentTemp.toFixed(1) + " °F");
         $(".current-hum").text("Humidity: " + response.main.humidity + "%");
         $(".current-wind").text("Wind Speed: " + response.wind.speed + " MPH");
-        queryURL = "http://api.openweathermap.org/data/2.5/uvi/forecast?&appid=49972f5423544d7ddb0bdd76f3805d92&lat=" + lat + "&lon=" + lon;
-
+        queryURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?&appid=49972f5423544d7ddb0bdd76f3805d92&lat=" + lat + "&lon=" + lon;
         //This call gets the UV index using the longitude and lattitude from the previous one
         $.ajax({
             url: queryURL,
@@ -63,7 +62,7 @@ $(".search").on("click", function() {
                 var forecastdatedisplay = forecastdate.charAt(5) + forecastdate.charAt(6) + "/" + forecastdate.charAt(8) + forecastdate.charAt(9) +
                 "/" + forecastdate.charAt(0) + forecastdate.charAt(1) + forecastdate.charAt(2) + forecastdate.charAt(3);
                 var fcIcon = forecastTimes[i].weather[0].icon;
-                var fcIconURL = "http://openweathermap.org/img/w/" + fcIcon + ".png";
+                var fcIconURL = "https://openweathermap.org/img/w/" + fcIcon + ".png";
                 var fcTemp = forecastTimes[i].main.temp * (9/5) - 459.67;
                 var fcHumidity = forecastTimes[i].main.humidity;
                 if (forecastdisplay === false || forecastdisplay === undefined) {
