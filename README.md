@@ -8,4 +8,4 @@ When the user searches for a city that city will be stored in localStorage and w
 
 I used html, javascript, css, the OpenWeather API, and the Moment.js library to create a weather dashboard.
 
-You can view the deployed application here: https://johnfranke.github.io/
+You can view the deployed application here: https://johnfranke.github.io/Weather-Dashboard/
