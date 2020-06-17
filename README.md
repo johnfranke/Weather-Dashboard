@@ -1,5 +1,11 @@
 ## Weather Dashboard
 
+You can view the deployed application here: https://johnfranke.github.io/Weather-Dashboard/
+
+## Preview
+
+![Preview Image](preview.png)
+
 ## Description
 
 The user is first prompted with the title of the app (Check The Weather) and then asked to input a city into the search bar. Once the user clicks the search button the current conditions of the city they searched will show on the left (or below if smaller screen). Under that a 5 day forecast for that city will also show. 
